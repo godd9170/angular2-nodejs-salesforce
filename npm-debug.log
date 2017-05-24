@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/henrygoddard/.nvm/versions/node/v4.2.0/bin/node',
+1 verbose cli   '/Users/henrygoddard/.nvm/versions/node/v4.2.0/bin/npm',
+1 verbose cli   'start' ]
+2 info using npm@3.9.2
+3 info using node@v4.2.0
+4 verbose stack Error: Invalid name: "Hank - Blackthorn.io"
+4 verbose stack     at ensureValidName (/Users/henrygoddard/.nvm/versions/node/v4.2.0/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:336:15)
+4 verbose stack     at Object.module.exports.fixNameField (/Users/henrygoddard/.nvm/versions/node/v4.2.0/lib/node_modules/npm/node_modules/normalize-package-data/lib/fixer.js:215:5)
+4 verbose stack     at /Users/henrygoddard/.nvm/versions/node/v4.2.0/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:32:38
+4 verbose stack     at Array.forEach (native)
+4 verbose stack     at normalize (/Users/henrygoddard/.nvm/versions/node/v4.2.0/lib/node_modules/npm/node_modules/normalize-package-data/lib/normalize.js:31:15)
+4 verbose stack     at final (/Users/henrygoddard/.nvm/versions/node/v4.2.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:349:5)
+4 verbose stack     at then (/Users/henrygoddard/.nvm/versions/node/v4.2.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:124:5)
+4 verbose stack     at /Users/henrygoddard/.nvm/versions/node/v4.2.0/lib/node_modules/npm/node_modules/read-package-json/read-json.js:311:12
+4 verbose stack     at /Users/henrygoddard/.nvm/versions/node/v4.2.0/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+5 verbose cwd /Users/henrygoddard/angular2-webpack-es6
+6 error Darwin 14.5.0
+7 error argv "/Users/henrygoddard/.nvm/versions/node/v4.2.0/bin/node" "/Users/henrygoddard/.nvm/versions/node/v4.2.0/bin/npm" "start"
+8 error node v4.2.0
+9 error npm  v3.9.2
+10 error Invalid name: "Hank - Blackthorn.io"
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
