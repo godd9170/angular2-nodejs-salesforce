@@ -9,7 +9,7 @@
   "scripts": {
     "start": "npm run build && node ./bin/www",
     "hot": "webpack-dev-server",
-    "build": "NODE_ENV=production node node_modules/webpack/bin/webpack.js -p --progress"
+    "build": "NODE_ENV=production node ./node_modules/webpack/bin/webpack.js -p --progress"
   },
   "repository": {
     "type": "git",
