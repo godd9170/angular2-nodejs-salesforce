@@ -1,13 +1,16 @@
 {
   "name": "blackthorn",
   "version": "0.1.0",
+  "engines": {
+    "node": "4.1.1"
+  },
   "description": "Blackthorn.io proficiency project.",
   "main": "",
   "scripts": {
-    "prestart": "npm install",
-    "start": "webpack-dev-server",
-    "build": "NODE_ENV=production node node_modules/webpack/bin/webpack.js -p --progress",
-    "test": "node ./bin/www"
+    "prestart": "build",
+    "start": "node ./bin/www",
+    "hot": "webpack-dev-server",
+    "build": "NODE_ENV=production node node_modules/webpack/bin/webpack.js -p --progress"
   },
   "repository": {
     "type": "git",
