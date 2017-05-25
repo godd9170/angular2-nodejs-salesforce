@@ -1,4 +1,14 @@
 
+## Environment Variables
+
+To prevent exposure of our Salesforce Credentials, we'll make use of a `.env` file. Create one in the root directory and fill in the following:
+
+```
+SF_USERNAME=
+SF_PASSWORD=
+SF_CLIENTID=
+SF_CLIENTSECRET=
+```
 
 # Notes
 
