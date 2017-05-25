@@ -7,7 +7,7 @@
   "description": "Blackthorn.io proficiency project.",
   "main": "",
   "scripts": {
-    "prestart": "build",
+    "prestart": "npm run build",
     "start": "node ./bin/www",
     "hot": "webpack-dev-server",
     "build": "NODE_ENV=production node node_modules/webpack/bin/webpack.js -p --progress"
