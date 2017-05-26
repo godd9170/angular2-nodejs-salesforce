@@ -1,6 +1,7 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CleanPlugin       = require('clean-webpack-plugin');
 var appEnv = process.env.NODE_ENV || 'development';
+var appUrl = (appEnv == 'development') ? '' : '';
 
 var config = {
 
@@ -40,11 +41,16 @@ var config = {
   },
 
   // inject js bundle to index.html
-  plugins: [new HtmlWebpackPlugin({
-    template: './src/index.html',
-    inject: 'body',
-    minify: false
-  })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      inject: 'body',
+      minify: false
+    }),
+    new webpack.DefinePlugin({ 
+        '__API_URL__': JSON.stringify(apiUrl)
+    })
+  ],
 
   // webpack dev server configuration
   devServer: {
