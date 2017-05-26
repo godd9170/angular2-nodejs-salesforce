@@ -6,11 +6,11 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 import { MaterialModule, MdButtonModule, MdCardModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 if (process.env.NODE_ENV == 'production') {
   enableProdMode();
@@ -34,6 +34,8 @@ import App from './app';
     BrowserAnimationsModule,
     MdButtonModule,
     MdCardModule,
+    ReactiveFormsModule, 
+    FormsModule,
     RouterModule.forRoot([
       { path: '', component: EventsComponent},
       { path: 'detail/:id', component: DetailsComponent},

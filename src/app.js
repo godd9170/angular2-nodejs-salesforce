@@ -23,7 +23,7 @@ export default class App {
   }
 
   getEvents() {
-      const url = 'http://localhost:3000/api/events';
+      const url = '/api/events'; //http://localhost:3000
       return this._http.get(url)
           .map(x => x.json());
   }

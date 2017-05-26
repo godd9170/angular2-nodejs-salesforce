@@ -149,7 +149,6 @@ router.post('/events/:id/register', (req, res) => {
   .then((attendeeId) => { //finally let's register the user in some sessions
     const sessionRegister = (sessions) => {
       var sessionId = sessions.splice(0,1)[0];
-      console.log('REGISTERING FOR SESSION: ', sessionId);
       if (sessions.length < 1) {
         res.status(200).json("Success!"); //we're finally done
       } else {

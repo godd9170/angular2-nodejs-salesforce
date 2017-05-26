@@ -1,5 +1,14 @@
 <div class="Grid med-Grid--1of2 small-Grid--full large-Grid--1of3 u-textCenter">
   <div *ngFor="let session of sessions" class="Grid-cell">
-    <div>{{session.id}}</div>
+    <md-card class="card">
+	  <md-card-header>
+	    <div md-card-avatar class="header-image"></div>
+	    <md-card-title class="header-title">{{ session.conference360__display_name__c }}</md-card-title>
+	    <md-card-subtitle></md-card-subtitle>
+	  </md-card-header>
+	  <!-- <img md-card-image src={{ event.name }}> -->
+	  <md-card-content>
+	  </md-card-content>
+	</md-card>
   </div>
 </div>

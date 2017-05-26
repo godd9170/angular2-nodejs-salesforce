@@ -2,10 +2,14 @@
 	<div class="event-banner">
 		<div class="event-title">{{ details.name }}</div>
 		<div class="event-times">{{ start }} - {{ end }}</div>
+		<button md-button (click)="gotoRegister()">REGISTER</button>
 	</div>
 	<div class="event-description-container">
 		<div class="event-description-title">Description</div>
 		<div class="event-description" [innerHTML]="details.conference360__description__c"></div>
 	</div>
-	<sessions [sessions]="details.sessions"></sessions>
+	<div class="sessions">
+		<div class="event-description-title">Sessions</div>
+		<sessions [sessions]="details.sessions"></sessions>
+	</div>
 </div>

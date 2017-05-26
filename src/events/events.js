@@ -25,7 +25,7 @@ export default class EventsComponent {
   }
 
   getEvents() {
-    const url = '/api/events';
+    const url = `/api/events`; //http://localhost:3000
     return this._http.get(url)
         .map(x => x.json());
   }
