@@ -1,7 +1,8 @@
+const webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CleanPlugin       = require('clean-webpack-plugin');
 var appEnv = process.env.NODE_ENV || 'development';
-var appUrl = (appEnv == 'development') ? '' : '';
+var apiUrl = (appEnv == 'development') ? '' : '';
 
 var config = {
 
