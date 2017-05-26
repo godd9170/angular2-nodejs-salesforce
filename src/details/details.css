@@ -1,0 +1,25 @@
+.details {
+	flex: 1;
+}
+
+.event-banner {
+	height: 300px;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	background-image: url('https://unsplash.it/500/100');
+	background-size: cover;
+}
+
+.event-description-container {
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.event-description-title {
+	text-align: center;
+}

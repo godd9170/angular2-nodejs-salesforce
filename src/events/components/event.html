@@ -1,0 +1,18 @@
+<md-card class="card">
+  <md-card-header>
+    <div md-card-avatar class="header-image"></div>
+    <md-card-title class="header-title">{{ event.name }}</md-card-title>
+    <md-card-subtitle>{{ eventDate }}</md-card-subtitle>
+  </md-card-header>
+  <!-- <img md-card-image src={{ event.name }}> -->
+  <md-card-content>
+    <div 
+      class="card-description"
+      [innerHTML]="event.conference360__description__c">
+    </div>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button (click)="gotoDetail()">DETAILS</button>
+    <button md-button (click)="gotoRegister()">REGISTER</button>
+  </md-card-actions>
+</md-card>

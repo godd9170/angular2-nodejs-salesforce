@@ -1,0 +1,20 @@
+.event-list {
+	display: block;
+}
+
+.events-banner {
+	height: 300px;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	background-image: url('https://unsplash.it/1000/400');
+	background-size: cover;
+}
+
+.events-title {
+	text-align: center;
+	font-size: 2em;
+	color: #fff;
+}

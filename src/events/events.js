@@ -3,12 +3,12 @@ import { Http } from '@angular/http';
 
 
 @Component({
-  selector: 'app',
-  template: require('./app.html'),
-  styles: [require('./app.css')]
+  selector: 'events',
+  template: require('./events.html'),
+  styles: [require('./events.css')]
 })
 
-export default class App {
+export default class EventsComponent {
   static get parameters() {
     return [[Http]];
   }
@@ -19,7 +19,9 @@ export default class App {
 
   ngOnInit() {
       this.getEvents()
-      .subscribe(x => this.events = x);
+      .subscribe(x => {
+        this.events = x;
+      });
   }
 
   getEvents() {

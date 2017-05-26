@@ -10,14 +10,21 @@ var config = {
     filename: "bundle.js"
   },
 
+  postcss: [
+      require('postcss-cssnext')({
+          browsers: ['ie >= 9', 'last 2 versions']
+      })
+  ],
+
   module: {
     loaders: [
 
       // load and compile javascript
       { test: /\.js$/, exclude: /node_modules/, loader:"babel" },
 
-      // load css and process less
-      { test: /\.css$/, loader: "style!css"},
+      // load css and postCSS
+      //{ test: /\.css$/, loader: 'to-string!css-loader!postcss-loader'},
+      { test: /\.css$/, loader: "raw"},
 
       // load JSON files and HTML
       { test: /\.json$/, loader: "json" },

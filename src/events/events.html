@@ -1,0 +1,10 @@
+<div class="event-list">
+  <div class="events-banner">
+    <div class="events-title">Events</div>
+  </div>
+  <div class="Grid med-Grid--1of2 small-Grid--full large-Grid--1of3 u-textCenter">
+      <div *ngFor="let event of events" class="Grid-cell">
+        <event [event]="event"></event>
+      </div>
+  </div>
+</div>

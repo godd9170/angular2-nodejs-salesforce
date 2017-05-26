@@ -1,0 +1,11 @@
+<div class="details">
+	<div class="event-banner">
+		<div class="event-title">{{ details.name }}</div>
+		<div class="event-times">{{ start }} - {{ end }}</div>
+	</div>
+	<div class="event-description-container">
+		<div class="event-description-title">Description</div>
+		<div class="event-description" [innerHTML]="details.conference360__description__c"></div>
+	</div>
+	<sessions [sessions]="details.sessions"></sessions>
+</div>

@@ -1,0 +1,28 @@
+.register {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.example-form {
+  width: 500px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.register-banner {
+	height: 100px;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.register-title {
+	text-align: center;
+	font-size: 2em;
+	color: #fff;
+}

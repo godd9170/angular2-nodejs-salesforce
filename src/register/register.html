@@ -1,0 +1,38 @@
+<div class="register">
+	<div class="register-banner">
+		<div class="register-title">Register for {{ details.name }}</div>
+	</div>
+	<form class="example-form">
+	  <table class="example-full-width" cellspacing="0"><tr>
+	    <td><md-input-container class="example-full-width">
+	      <input mdInput placeholder="First Name">
+	    </md-input-container></td>
+	    <td><md-input-container class="example-full-width">
+	      <input mdInput placeholder="Last Name">
+	    </md-input-container></td>
+	  </tr></table>
+
+	  <p>
+	    <md-input-container class="example-full-width">
+	      <textarea mdInput placeholder="Email"></textarea>
+	    </md-input-container>
+	  </p>
+	  <table class="example-full-width" cellspacing="0"><tr>
+	    <td><md-input-container class="example-full-width">
+	      <input mdInput placeholder="Company">
+	    </md-input-container></td>
+	    <td><md-input-container class="example-full-width">
+	      <input mdInput placeholder="Website">
+	    </md-input-container></td>
+	  </tr></table>
+
+	  <md-checkbox
+          class="example-margin"
+          [checked]="checked"
+          [indeterminate]="indeterminate"
+          [align]="align"
+          [disabled]="disabled">
+        Session 1
+      </md-checkbox>
+	</form>
+</div>
