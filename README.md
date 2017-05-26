@@ -1,6 +1,6 @@
 ## Demo
 
-(https://protected-dawn-23767.herokuapp.com/)[https://protected-dawn-23767.herokuapp.com/]
+https://protected-dawn-23767.herokuapp.com/
 
 
 ## Environment Variables
