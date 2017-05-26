@@ -32,7 +32,7 @@ export default class RegisterComponent {
   }
 
   getEventDetails() {
-    const url = `http://localhost:3000/api/events/${this.id}`;
+    const url = `/api/events/${this.id}`;
     return this._http.get(url)
         .map(x => x.json());
   }
