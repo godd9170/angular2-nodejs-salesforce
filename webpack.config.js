@@ -2,7 +2,7 @@ const webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CleanPlugin       = require('clean-webpack-plugin');
 var appEnv = process.env.NODE_ENV || 'development';
-var apiUrl = (appEnv == 'development') ? '' : '';
+var apiUrl = (appEnv == 'development') ? '' : 'https://protected-dawn-23767.herokuapp.com';
 
 var config = {
 
