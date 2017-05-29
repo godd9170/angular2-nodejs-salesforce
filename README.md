@@ -1,3 +1,25 @@
+## Angular2 + NodeJS + Salesforce
+
+A quick POC that augments Salesforce functionality on an externally hosted NodeJS server using Angular2 as a frontend. Currently it exposes only a few custom Salesforce objects. To make this a nice quickstart application a generic salesforce route should be designed.
+
+                 +----------------+                                  
+                 |                |                                  
+                 |    Angular2    |                                  
+                 |                |                                  
+                 +--------|-------+                                  
+                          |                                          
+                          |                                          
+                          |                                          
+                 +--------|-------+               +----------------+ 
+                 |                |               |                | 
+                 |     Express    |               |                | 
+                 |                |               |                | 
+                 |     NodeJs     -----------------   Salesforce   | 
+                 |                |               |                | 
+                 |     Heroku     |               |                | 
+                 |                |               |                | 
+                 +----------------+               +----------------+
+
 ## Demo
 
 https://protected-dawn-23767.herokuapp.com/
